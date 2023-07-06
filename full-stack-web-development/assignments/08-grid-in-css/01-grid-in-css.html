@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 01</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Raleway', sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            overflow: hidden;
+            height: 100vh;
+        }
+        .info {
+            padding-left: 70px;
+            padding-right: 70px;
+            align-self: center;
+            grid-column: 1/5;
+        }
+        .info > h1 {
+            padding-bottom: 20px;
+        }
+        .readmore-button{
+            margin-top: 25px;
+            height: 40px;
+            width: 150px;
+            font-size: 15px;
+            background-color: black;
+            color: white;
+        }
+        .image {
+            background-color: grey;
+            grid-column: 5/7;
+            height: 100vh;
+        }
+        .item3 {
+            grid-column: 7/8;
+            background-color: yellow;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item info">
+            <h1>Healthy Food</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quis quasi maiores ipsum quia, reprehenderit
+                provident ex, id facere eius, dicta at labore beatae. Consectetur beatae cumque sequi deleniti mollitia, omnis
+                ratione corporis dolorum quia? Iusto porro, accusamus sit fuga laboriosam repellendus, veniam eos vero labore, atque
+                quisquam sunt nam iste optio illum id fugiat sapiente odit tenetur repudiandae. Ea tempora odio voluptatibus culpa
+                perferendis beatae a dignissimos sed iste aut dolorum excepturi voluptatum qui porro, aliquid ullam enim laudantium
+                ipsam recusandae magnam veritatis hic cumque ut distinctio. Nam, suscipit doloremque? Et corporis repellat,
+                molestiae praesentium dolores in maiores quidem.
+            </p>
+            <button class="readmore-button"> Read More</button>
+        </div>
+
+        <div class="item image">
+            <img src="./assets/vegetable-portrait.jpg" alt="Vegetables Image" height="750px">
+        </div>
+
+        <div class="item item3"></div>
+    </div>
+</body>
+</html>

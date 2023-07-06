@@ -1,0 +1,12 @@
+body{
+    background-color: #262626;
+}
+h1{
+    color: #acecff;
+    background-color: rgba(172, 236, 255, 0.245);
+    border-radius: 10px;
+    text-align: center;
+}
+p{
+    color: #ffffff;
+}

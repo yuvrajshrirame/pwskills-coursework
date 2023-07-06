@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 05</title>
+    <style>
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-style: solid;
+        }
+        .container {
+            margin: 0 auto;
+            margin-top: 12%;
+            height: 300px;
+            width: 450px;
+            transition: all 1s ease-in-out;
+            filter: blur(10px);
+        }
+        .container img {
+            height: 300px;
+            width: 450px;
+        }
+        .container:hover {
+            filter: blur(0px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover to Reveal Image</h1>
+    <div class="container">
+        <img src="./assets/ocean-landscape.jpg" alt="Ocean Landscape" width="100%">
+    </div>
+</body>
+</html>

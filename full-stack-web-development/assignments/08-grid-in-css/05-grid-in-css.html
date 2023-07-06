@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 05</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Raleway', sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+        }
+        .info {
+            padding-left: 70px;
+            padding-right: 70px;
+            align-self: center;
+            grid-column: 1/5;
+        }
+        .info > h1 {
+            padding-bottom: 20px;
+        }
+        .readmore-button{
+            margin-top: 25px;
+            height: 40px;
+            width: 150px;
+            font-size: 15px;
+            background-color: black;
+            color: white;
+        }
+        .image {
+            background-color: grey;
+            grid-column: 5/7;
+        }
+        .item3 {
+            grid-column: 7/8;
+            background-color: #ffff00;
+        }
+        /* Navbar Designing */
+        .navbar {
+            background-color: white;
+            height: 50px;
+            width: 100vw;   
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 1px 1px 10px grey;
+        }
+        .navitems > button {
+            height: 30px;
+            width: 100px;
+            background-color: #29de00;
+            font-weight: 600;
+            border-style: none;
+        }
+        .logo > img {
+            position: relative;
+            left: 20px;
+        }
+        .navitems > button {
+            position: relative;
+            right: 20px;
+        }
+        .nav-links > ul > a {
+            text-decoration: none;
+            padding: 0px 20px;
+            color: black;
+            font-weight: 600;
+        }
+        /* Swiggy Design Integration */
+        .swiggy-design {
+            margin-top: 10px;
+            background-color: #391b00;
+            height: 400px;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: repeat(3,300px);
+            justify-content: space-around;
+        }
+        .element {
+            text-align: center;
+            color: white;
+        }
+        .element > div > h3 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        /* Additional Features */
+        .additional-features {
+            display: grid;
+            grid-template-columns: repeat(3,300px);
+            justify-content: space-around;
+            width: 95%;
+        }
+        .cards {
+            margin-top: 40px;
+            height: 300px;
+            width: 400px;
+            border: 1px black solid;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .cards img {
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+        /* Footer Design */
+        .footer-section {
+            height: 400px;
+            margin-top: 40px;
+            background-color: #391b00;
+            display: grid;
+            grid-template-columns: repeat(3,300px);
+            align-items: center;
+            justify-content: space-around;
+        }
+        .cancel-lists > ul > li {
+            list-style-type: none;
+            padding: 10px;
+        }
+        .footer-navlinks > h2 {
+            padding-bottom: 30px;
+            color: #ffffff;
+        }
+        .footer-learnmore > h2 {
+            padding-bottom: 30px;
+            color: #ffffff;
+        }
+        .footer-navlinks > ul > li > a {
+            color: #ffe2ac;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .footer-learnmore > ul > li > a {
+            color: #ffe2ac;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .legal-copyrights {
+            color: white;
+            font-weight: 600;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="navitems logo">
+                <img src="./assets/healthy-food-logo.png" alt="Healthy Food Logo" width="30px">
+            </div>
+            <div class="navitems nav-links">
+                <ul>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </ul>
+            </div>
+            <div class="navitems">
+                <button>Login</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="item info">
+            <h1>Healthy Food</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quis quasi maiores ipsum quia, reprehenderit
+                provident ex, id facere eius, dicta at labore beatae. Consectetur beatae cumque sequi deleniti mollitia, omnis
+                ratione corporis dolorum quia? Iusto porro, accusamus sit fuga laboriosam repellendus, veniam eos vero labore, atque
+                quisquam sunt nam iste optio illum id fugiat sapiente odit tenetur repudiandae. Ea tempora odio voluptatibus culpa
+                perferendis beatae a dignissimos sed iste aut dolorum excepturi voluptatum qui porro, aliquid ullam enim laudantium
+                ipsam recusandae magnam veritatis hic cumque ut distinctio. Nam, suscipit doloremque? Et corporis repellat,
+                molestiae praesentium dolores in maiores quidem.
+            </p>
+            <button class="readmore-button"> Read More</button>
+        </div>
+
+        <div class="item image">
+            <img src="./assets/vegetable-portrait.jpg" alt="Vegetable Portrait" height="750px">
+        </div>
+
+        <div class="item item3"></div>
+    </div>
+    <div class="swiggy-design">
+
+        <!-- Element 1 -->
+        <div class="element element-1">
+            <div>
+                <img src="./assets/feature-01.webp" alt="No Minimun Order PNG" width="105px">
+            </div>
+            <div>
+                <h3>No Minimun Order</h3>
+            </div>
+            <div>
+                <p>Order in for yourself or for the group, <br>with no restrictions on order value</p>
+            </div>
+        </div>
+        <!-- Element 2 -->
+        <div class="element element-2">
+            <div>
+                <img src="./assets/feature-02.webp" alt="Live Order Tracking PNG" width="108px" height="200px">
+            </div>
+            <div>
+                <h3>Live Order Tracking</h3>
+            </div>
+            <div>
+                <p>Know where your order is at all times,<br> from the restaurant to your doorstep</p>
+            </div>
+        </div>
+        <!-- Element 3 -->
+        <div class="element element-3">
+            <div>
+                <img src="./assets/feature-03.webp" alt="Lightining Fast Delivery PNG" width="124px" height="200px">
+            </div>
+            <div>
+                <h3>Lightining Fast Delivery</h3>
+            </div>
+            <div>
+                <p>Experience Swiggy's superfast delivery <br>for food delivered fresh & on time</p>
+            </div>
+        </div>
+    </div>
+    <div class="additional-features">
+        <div class="cards card-1">
+            <img src="./assets/card-01.jpg" alt="Order Online Image" width="400px" height="200px">
+            <h3>Order Online</h3>
+            <p>Stay Home & Order to Your Doorstep</p>
+        </div>
+        <div class="cards card-2">
+            <img src="./assets/card-02.jpg" alt="On-site Dining Image" width="400px" height="200px">
+            <h3>On-site Dining</h3>
+            <p>View the City's Favourite Dining Venues</p>
+        </div>
+        <div class="cards card-3">
+            <img src="./assets/card-03.jpg" alt="Nightlife & Clubs Image" width="400px" height="200px">
+            <h3>Nightlife & Clubs</h3>
+            <p>Explore the City's Top Nightlife <br>Outlets & Book Tables</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-section">
+            <div class="footer-logo">
+                <img src="./assets/healthy-food-logo.png" alt="Footer Logo" width="300px">
+            </div>
+            <div class="cancel-lists footer-navlinks">
+                <h2>Navigation Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+            <div class="cancel-lists footer-learnmore">
+                <h2>Learn More</h2>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div>
+                <p></p>
+            </div>
+            <div class="legal-copyrights">
+                <p>&copy; Copyright All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

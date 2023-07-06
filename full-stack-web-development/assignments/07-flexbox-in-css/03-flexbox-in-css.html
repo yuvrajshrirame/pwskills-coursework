@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 03</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+        }
+        .container{
+            position: fixed;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100;
+            bottom: 0px;
+            right: 0px;
+            left: 0px;
+            background-color: #1e1e1e;
+        }
+        .ctr{
+            margin: 50px;
+        }
+        .container-2{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul{
+            list-style: none;
+            padding: 10px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            padding-bottom: 20px;
+        }
+        .container-two h2{
+            border-bottom: 2px #a57822 solid;
+            padding-bottom: 20px;
+        }
+        .container-three h2{
+            border-bottom: 2px #a57822 solid;
+            padding-bottom: 20px;
+        }
+        .container-three > a{
+            color: white;
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .text-below-iso{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Container One -->
+        <div class="ctr container-one">
+            <img src="./assets/pwskills-logo.jpg" alt="PW Skills Logo" width="200px">
+            <p>Email Us:</p>
+            <p>support@pwskills.com</p>
+            <img src="./assets/iso-certified-logo.jpg" alt="ISO" width="200px">
+            <p class="text-below-iso">ISO 9001</p>
+        </div>
+        <!-- Container Two -->
+        <div class="ctr container-two">
+            <h2>PW Skills</h2>
+            <div class="container-2">
+                <div>
+                    <ul>
+                        <li><a href="#">About Us</a></li><br>
+                        <li><a href="#">FAQs</a></li><br>
+                        <li><a href="#">Privacy Policy</a></li>  
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li><br>
+                        <li><a href="#">Job Assistance</a></li><br>
+                        <li><a href="#">Terms and Conditions</a></li>  
+                    </ul>
+                </div>
+            </div>            
+        </div>
+        <!-- Container Three -->
+        <div class="ctr container-three">
+            <h2>Products</h2>
+            <a href="#">PW Skills Lab</a>
+            <a href="#">Job Portal</a>
+            <a href="#">Experience Portal</a>
+            <a href="#">Become an Affiliate</a>
+            <a href="#">Hall of Fame</a>
+        </div>
+    </div>
+</body>
+</html>

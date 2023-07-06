@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 05</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans';
+            background-color: #2a2a2a;
+            color: white;
+        }
+        header > h1{
+            color: #e02b74;
+            text-align: center;
+        }
+        .images{
+            width: 150px;
+            border-radius: 300px;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .cards h1{
+            text-align: center;
+            color: black;
+        }
+        .cards p{
+            font-size: 12px;
+            padding: 10px 20px;
+            color: black;
+        }
+        .cards{
+            margin-top: 50px;
+            margin: 50px 10px;
+            height: 500px;
+            width: 300px;
+            border: 5px black solid;
+            border-radius: 10px;
+        }
+        .cards img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card-1{
+            background-color: #00ffff;
+        }
+        .card-2{
+            background-color: #ff0080;
+        }
+        .card-3{
+            background-color: #ff00ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Full Stack Web Development</h1>
+    </header>
+    <main>
+        <div class="container">
+            <!-- Card 1 -->
+            <div class="cards card-1">
+                <h1>HTML</h1>
+                <img src="./assets/html-logo.jpg" alt="HTML Logo" class="images">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe necessitatibus atque tempore sint, obcaecati corrupti
+                    odio dolor repudiandae non iusto, quos quidem. Corporis neque alias aliquam eligendi perferendis suscipit tenetur vitae
+                    maiores itaque voluptates? Placeat voluptas saepe sequi officia soluta quis quam deserunt architecto laboriosam amet
+                    eius recusandae doloribus magnam quasi dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eaque
+                    recusandae quod ullam a, pariatur dolorem deserunt! Ratione, at, iure expedita quod culpa consequuntur
+                </p>
+            </div>
+            <!-- Card 2 -->
+            <div class="cards card-2">
+                <h1>CSS</h1>
+                <img src="./assets/css-logo.jpg" alt="CSS Logo" class="images">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe necessitatibus atque tempore sint, obcaecati corrupti
+                    odio dolor repudiandae non iusto, quos quidem. Corporis neque alias aliquam eligendi perferendis suscipit tenetur vitae
+                    maiores itaque voluptates?
+            </div>
+            <!-- Card 3 -->
+            <div class="cards card-3">
+                <h1>JavaScript</h1>
+                <img src="./assets/javascript-logo.jpg" alt="JavaScript Logo" class="images">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe necessitatibus atque tempore sint, obcaecati corrupti
+                    odio dolor repudiandae non iusto, quos quidem. Corporis neque alias aliquam eligendi perferendis suscipit tenetur vitae
+                    maiores itaque voluptates? Placeat voluptas saepe sequi officia soluta quis quam deserunt architecto laboriosam amet
+                    eius recusandae doloribus
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

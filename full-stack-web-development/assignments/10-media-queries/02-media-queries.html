@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 02</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+        *, ::before ::after {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins',sans-serif;
+        }
+        .nav-container {
+            background-color: #15121f;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .container {
+            overflow: hidden;
+        }
+        .logo > img {
+            width: 30px;
+        }
+        .nav-items > a {
+            padding: 0px 20px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .login-button > button {
+            height: 30px;
+            width: 100px;
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+            background-color: #0028c8;
+        }
+        .line {
+            height: 30px;
+            width: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        .line-1 {
+            margin-bottom: 10px;
+            background-color: #ffffff;
+            height: 0.5px;
+            width: 30px;
+        }
+        .line-2 {
+            background-color: #ffffff;
+            height: 0.5px;
+            width: 30px;
+        }
+        .line-3 {
+            margin-top: 10px;
+            background-color: #ffffff;
+            height: 0.5px;
+            width: 30px;
+        }
+        .hamburger-menu {
+            display: none;
+        }
+        .main-content {
+            display: flex;
+            width: 100vw;
+            justify-content: space-between;
+            padding: 0px 10%;
+        }
+        .content-left {
+            width: 100%;
+        }
+        .headings {
+            padding-top: 100px;
+        }
+        .headings > h1 {
+            margin: 0px;
+            color: #00a6ff;
+            font-size: 50px;
+        }
+        .headings > p {
+            color: #00a6ff;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        .bank-partners > img {
+            width: 90%;
+        }
+        .description > p {
+            width: 70%;
+            padding-top: 30px;
+        }
+        .video {
+            margin-top: 50px;
+        }
+
+        /* Performing Media Queries */
+
+        @media screen and (max-width: 874px) {
+            .nav-items {
+                display: none;
+            }
+            .login-button {
+                display: none;
+            }
+            .hamburger-menu {
+                color: #ffffff;
+                display: block;
+            }
+            .bank-partners {
+                width: 70%;
+            }
+            .main-content {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./assets/random-logo.png" alt="Random Logo">
+            </div>
+            <div class="nav-items">
+                <a href="#">Home</a>
+                <a href="#">Blog</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="login-button">
+                <button>Login</button>
+            </div>
+            <div class="hamburger-menu">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="content-left">
+                <div class="headings">
+                    <h2>Say Hi To</h2>
+                    <h1>One Card</h1>
+                    <p>Co-branded Card Issuers:</p>
+                </div>
+                <div class="bank-partners">
+                    <img src="./assets/bank-partners.png" alt="Bank Partners">
+                </div>
+                <div class="description">
+                    <p>
+                        India's Best Metal Credit Card. Built with Full Stack Tech. Backed by the Principles of Simplicity, transparency and
+                        giving back control to the user.
+                    </p>
+                </div>
+            </div>
+            <div class="content-right">
+                <video class="video" src="./assets/onecard-floating.mp4" controls autoplay width="75%" ></video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

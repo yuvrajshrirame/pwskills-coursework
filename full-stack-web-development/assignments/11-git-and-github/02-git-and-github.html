@@ -1,0 +1,76 @@
+<!-- Assignment Question 02: Design & Develop a Signup Page using HTML & CSS. The login page should have a visually appealing layout. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 02: Signup Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-color: #000000;
+        }
+        .container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            padding: 40px 20px;
+            margin: auto;
+            background-color: #FFFFFF;
+            height: 550px;
+            width: 400px;
+            border-radius: 7px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: grey 2px solid;
+            margin: 10px 0px;
+        }
+        button {
+            background-color: #000000;
+            color: #FFFFFF;
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Signup</h1>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="select">Batch:</label>
+            <select name="select" id="select">
+                <option value="1">Sigma 2.0</option>
+                <option value="2">Sigma 1.0</option>
+            </select>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" maxlength="110">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+            <button type="submit">Signup</button>
+        </div>
+    </div>
+</body>
+</html>

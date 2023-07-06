@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 02</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Raleway', sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+        }
+        .info {
+            padding-left: 70px;
+            padding-right: 70px;
+            align-self: center;
+            grid-column: 1/5;
+        }
+        .info > h1 {
+            padding-bottom: 20px;
+        }
+        .readmore-button{
+            margin-top: 25px;
+            height: 40px;
+            width: 150px;
+            font-size: 15px;
+            background-color: black;
+            color: white;
+        }
+        .image {
+            background-color: grey;
+            grid-column: 5/7;
+        }
+        .item3 {
+            grid-column: 7/8;
+            background-color: #ffff00;
+        }
+        /* Navbar Designing */
+        .navbar {
+            background-color: white;
+            height: 50px;
+            width: 100vw;   
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 1px 1px 10px grey;
+        }
+        .navitems > button {
+            height: 30px;
+            width: 100px;
+            background-color: #29de00;
+            font-weight: 600;
+            border-style: none;
+        }
+        .logo > img {
+            position: relative;
+            left: 20px;
+        }
+        .navitems > button {
+            position: relative;
+            right: 20px;
+        }
+        .nav-links > ul > a {
+            text-decoration: none;
+            padding: 0px 20px;
+            color: black;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="navitems logo">
+                <img src="./assets/healthy-food-logo.png" alt="Healthy Food Logo" width="30px">
+            </div>
+            <div class="navitems nav-links">
+                <ul>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </ul>
+            </div>
+            <div class="navitems">
+                <button>Login</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="item info">
+            <h1>Healthy Food</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quis quasi maiores ipsum quia, reprehenderit
+                provident ex, id facere eius, dicta at labore beatae. Consectetur beatae cumque sequi deleniti mollitia, omnis
+                ratione corporis dolorum quia? Iusto porro, accusamus sit fuga laboriosam repellendus, veniam eos vero labore, atque
+                quisquam sunt nam iste optio illum id fugiat sapiente odit tenetur repudiandae. Ea tempora odio voluptatibus culpa
+                perferendis beatae a dignissimos sed iste aut dolorum excepturi voluptatum qui porro, aliquid ullam enim laudantium
+                ipsam recusandae magnam veritatis hic cumque ut distinctio. Nam, suscipit doloremque? Et corporis repellat,
+                molestiae praesentium dolores in maiores quidem.
+            </p>
+            <button class="readmore-button"> Read More</button>
+        </div>
+
+        <div class="item image">
+            <img src="./assets/vegetable-portrait.jpg" alt="Vegetables Image" height="750px">
+        </div>
+
+        <div class="item item3"></div>
+    </div>
+</body>
+</html>

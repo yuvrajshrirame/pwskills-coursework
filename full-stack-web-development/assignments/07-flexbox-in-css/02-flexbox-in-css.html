@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 02</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        background-color: #a7b8c9;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container{
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .course-card {
+        width: 350px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+      }
+      .heading-main{
+        text-align: center;
+        color: #6d50ff;
+      }
+      .heading-main-desc{
+        text-align: center;
+        color: #515151;
+      }
+      .instructor-name{
+        font-weight: bold;
+        color: #585858;
+      }
+      .price{
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+  <h1 class="heading-main">Community Programs</h1>
+  <p class="heading-main-desc">Open to all Pro Live Classes on YouTube</p>
+    <div class="container">
+        <div class="course-card">
+          <img src="./assets/course-card-01.jpg" alt="Course-One" width="350px">
+          <h2>Masterclass Understanding APIs in Web Development</h2>
+          <p class="instructor-name">Vishwa Mohan</p>
+          <p class="price">FREE</p>
+        </div>
+        <div class="course-card">
+          <img src="./assets/course-card-02.jpg" alt="Course-Two" width="350px">
+          <h2>Masterclass Cracking the Coding Interview Linked-List</h2>
+          <p class="instructor-name">Hitesh Choudhdary</p>
+          <p class="price">FREE</p>
+        </div>
+        <div class="course-card">
+          <img src="./assets/course-card-03.jpg" alt="Course-Three" width="350px">
+          <h2>Masterclass Importance of DSA in Modern Programming</h2>
+          <p class="instructor-name">Priya Bhatia</p>
+          <p class="price">FREE</p>
+        </div>
+    </div>
+</body>
+</html>

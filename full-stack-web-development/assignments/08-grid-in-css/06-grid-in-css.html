@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 06</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Raleway',sans-serif;
+        }
+        header > h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        /* Container Styling */
+        .container {
+            margin: 20px 50px;
+            height: 350px;
+        }
+        /* Column Header Styling */
+        .column-header {
+            display: grid;
+            grid-template-columns: repeat(8,170px);
+            text-align: center;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        .header-cell {
+            padding: 20px 10px;
+            border: 2px black dotted;
+            background-color: #ffa2a2;
+        }
+        /* Row Header Styling */
+        .rows {
+            display: grid;
+            grid-template-rows: repeat(6,1fr);
+            grid-template-columns: 170px 170px 170px 170px 170px 170px 170px 170px;
+            text-align: center;
+            width: 170px;
+            font-weight: 600;
+        }
+        .row-cell {
+            padding: 10px 5px;
+            border: 2px black dotted;
+            background-color: #ff9aff;
+        }
+        /* Column 1 & 2 */
+        .content-column-1-and-2 {
+            display: grid;
+            grid-template-columns: repeat(2,170px);
+        }
+        .CC1 {
+            padding: 10px 5px;
+            border: 2px black dotted;
+            background-color: #ff9aff;
+        }
+        .CC1-3, .CC1-6, .CC1-9 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: #ddffff;
+        }
+        .CC1-1, .CC1-2, .CC1-4, .CC1-5, .CC1-7, .CC1-8 {
+            background-color: #81ffff;
+        }
+        /* Column 3 */
+        .CC3 {
+            grid-column-start: 3;
+            padding: 10px 5px;
+            border: 2px black dotted;
+            background-color: #81ffff;
+        }
+        /* Column 4 */
+        .CC4 {
+            padding: 10px 5px;
+            border: 2px black dotted;
+            background-color: #81ffff;
+        }
+        /* Column 5 */
+        .CC5 {
+            grid-column-start: 3;
+            padding: 10px 5px;
+            border: 2px black dotted;
+            background-color: #f8ff72;
+            padding-top: 13.3px;
+            border-style: none;
+        }
+        /* Column 6 */
+        .content-column-6-and-7 {
+            display: grid;
+            grid-template-columns: repeat(2,170px);
+        }
+        .CC6 {
+            padding: 10px 5px;
+            border: 2px black dotted;
+            background-color: #81ffff;
+        }
+        .CC6-1, .CC6-4, .CC6-7, .CC6-8 {
+            grid-column: 1/3;
+        }
+        .CC6-1, .CC6-7 {
+            background-color: #ddffff;
+        }
+        .CC6-2, .CC6-3, .CC6-5, .CC6-6 {
+            background-color: #81ffff;
+        }
+        .CC6-4, .CC6-8 {
+            background-color: #a3ffa3;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>School Timetable</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="column-header">
+                <div class="header-cell column-header-1">TIME</div>
+                <div class="header-cell column-header-2">08:00 AM - 09:00 AM</div>
+                <div class="header-cell column-header-3">09:00 AM - 10:00 AM</div>
+                <div class="header-cell column-header-4">10:00 AM - 11:00 AM</div>
+                <div class="header-cell column-header-5">11:00 AM - 12:00 PM</div>
+                <div class="header-cell column-header-6">12:00 PM - 02:00 PM</div>
+                <div class="header-cell column-header-7">02:00 PM - 03:00 PM</div>
+                <div class="header-cell column-header-8">03:00 PM - 04:00 PM</div>
+            </div>
+            <div class="rows">
+                <div class="row-header">
+                    <div class="row-cell row-header-1">Monday</div>
+                    <div class="row-cell row-header-2">Tuesday</div>
+                    <div class="row-cell row-header-3">Wednesday</div>
+                    <div class="row-cell row-header-4">Thursday</div>
+                    <div class="row-cell row-header-5">Friday</div>
+                    <div class="row-cell row-header-6">Saturday</div>
+                </div>
+                <div class="content-column-1-and-2">
+                    <div class="CC1 CC1-1">English</div>
+                    <div class="CC1 CC1-2">Biology</div>
+                    <div class="CC1 CC1-3">Biology Lab</div>
+                    <div class="CC1 CC1-4">English</div>
+                    <div class="CC1 CC1-5">Biology</div>
+                    <div class="CC1 CC1-6">Biology Lab</div>
+                    <div class="CC1 CC1-7">English</div>
+                    <div class="CC1 CC1-8">Biology</div>
+                    <div class="CC1 CC1-9">Biology Lab</div>
+                </div>
+                <div class="empty-div-for-col-2-space"></div>
+                <div class="content-column-3">
+                    <div class="CC3 CC3-1">Physics</div>
+                    <div class="CC3 CC3-2">Physics</div>
+                    <div class="CC3 CC3-3">Physics</div>
+                    <div class="CC3 CC3-4">Physics</div>
+                    <div class="CC3 CC3-5">Physics</div>
+                    <div class="CC3 CC3-6">Physics</div>
+                </div>
+                <div class="content-column-4">
+                    <div class="CC4 CC4-1">Chemistry</div>
+                    <div class="CC4 CC4-2">Chemistry</div>
+                    <div class="CC4 CC4-3">Chemistry</div>
+                    <div class="CC4 CC4-4">Chemistry</div>
+                    <div class="CC4 CC4-5">Chemistry</div>
+                    <div class="CC4 CC4-6">Chemistry</div>
+                </div>
+                <div class="content-column-5">
+                    <div class="CC5 CC5-1">L</div>
+                    <div class="CC5 CC5-2">U</div>
+                    <div class="CC5 CC5-3">N</div>
+                    <div class="CC5 CC5-4">C</div>
+                    <div class="CC5 CC5-5">H</div>
+                    <div class="CC5 CC5-6">Break</div>
+                </div>
+                <div class="content-column-6-and-7">
+                    <div class="CC6 CC6-1">Chemistry Lab</div>
+                    <div class="CC6 CC6-2">English</div>
+                    <div class="CC6 CC6-3">Biology</div>
+                    <div class="CC6 CC6-4">Games</div>
+                    <div class="CC6 CC6-5">English</div>
+                    <div class="CC6 CC6-6">Biology</div>
+                    <div class="CC6 CC6-7">Physics Lab</div>
+                    <div class="CC6 CC6-8">LET OFF</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

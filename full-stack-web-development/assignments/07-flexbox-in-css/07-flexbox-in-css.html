@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 07</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins';
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        .warning-box{
+            top: 5px;
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            height: 40px;
+            border-radius: 10px;
+            border-left: 4px red solid;
+            width: 95%;
+            background-color: #ffdddd;
+        }
+        .danger-icon{
+            margin-left: 10px;
+            margin-top: 3px;
+        }
+        .danger-text{
+            color: #ff1818;
+        }
+        .cross-icon{
+            margin-right: 10px;
+            margin-top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="warning-box">
+            <div class="danger-icon">
+                <img src="./assets/danger-icon.png" alt="Danger Icon" width="30px">
+            </div>
+            <div class="danger-text">
+                <p>Warning!! This Action is Not Allowed.</p>
+            </div>
+            <div class="cross-icon">
+                <img src="./assets/cross-symbol.png" alt="Cross Symbol" width="24px">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

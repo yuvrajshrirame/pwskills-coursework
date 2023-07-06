@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 07</title>
+    <style>
+        .container{
+            position: relative;
+        }
+        .cards{
+            position: absolute;
+        }
+        .cards:hover{
+            z-index: 1;
+        }
+        .card-one{
+            background-color: #7fffd4;
+            border-style: solid;
+            border-color: #000000;
+            border-radius: 10px;
+            height: 300px;
+            width: 240px;
+            top: 0px;
+            left: 0px;
+        }
+        .card-two{
+            background-color: #7f99ff;
+            border-style: solid;
+            border-color: #000000;
+            border-radius: 10px;
+            height: 300px;
+            width: 240px;
+            top: 50px;
+            left: 50px;
+        }
+        .card-three{
+            background-color: #d2ff7f;
+            border-style: solid;
+            border-color: #000000;
+            border-radius: 10px;
+            height: 300px;
+            width: 240px;
+            top: 100px;
+            left: 100px;
+        }
+        .card-one img{
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            top: 100px;
+        }
+        .card-two img{
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            top: 100px;
+        }
+        .card-three img{
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            top: 100px;
+        }
+        p{
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Hover to Unveil the Pokemon</h1>
+    <div class="container">
+        <div class="cards card-one">
+            <p>Card 01</p>
+            <img src="./assets/pokemon-card-01.jpg" alt="Card One" width="200px">
+        </div>
+    
+        <div class="cards card-two">
+            <p>Card 02</p>
+            <img src="./assets/pokemon-card-02.jpg" alt="Card Two" width="150px">
+        </div>
+    
+        <div class="cards card-three">
+            <p>Card 03</p>
+            <img src="./assets/pokemon-card-03.jpg" alt="Card Three" width="200px">
+        </div>
+    </div>
+</body>
+</html>

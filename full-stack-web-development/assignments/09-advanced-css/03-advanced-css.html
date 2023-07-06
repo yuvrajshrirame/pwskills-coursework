@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 03</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container {
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 40px;
+            height: 400px;
+            width: 400px;
+            margin: 0px auto;
+            background-image: linear-gradient(to right, rgb(0, 183, 255), rgb(0, 81, 255));
+            margin-top: 10%;
+            transition: all 1s ease-in-out;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        span {
+            color: #FFF;
+        }
+        .main {
+            margin-top: 40px;
+        }
+        .main h1 {
+            padding-bottom: 15px;
+        }
+        .main ul li {
+            text-align: left;
+            list-style-position: inside;
+            padding-left: 20px;
+        }
+        .button button {
+            margin-top: 30px;
+            height: 40px;
+            width: 310px;
+            font-weight: 500;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 10px;
+            background-image: linear-gradient(to right, #7fffff, #90ff90);
+        }
+        /* Applying Rotate Effect */
+        .container:hover {
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left">
+                <h1>#01</h1>
+            </div>
+            <div class="right">
+                <span>Created On: 01/01/2023</span>
+            </div>
+        </div>
+        <div class="main">
+            <h1>Important Dates</h1>
+            <ul>
+                <li>January 26 - Republic Day</li>
+                <li>August 15 - Independence Day</li>
+                <li>October 2 - Gandhi Jayanti</li>
+                <li>August 29 - National Sports Day</li>
+            </ul>
+        </div>
+        <div class="button">
+            <button>Mark as Done</button>
+        </div>
+    </div>
+</body>
+</html>

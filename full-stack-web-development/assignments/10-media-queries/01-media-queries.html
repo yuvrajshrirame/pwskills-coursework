@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 01</title>
+    <style>
+        *, ::before ::after {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .nav-container {
+            background-color: #15121f;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .logo > img {
+            width: 30px;
+        }
+        .nav-items > a {
+            padding: 0px 20px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .login-button > button {
+            height: 30px;
+            width: 100px;
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+            background-color: #0028c8;
+        }
+        .line {
+            height: 30px;
+            width: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        .line-1 {
+            margin-bottom: 10px;
+            background-color: #ffffff;
+            height: 0.5px;
+            width: 30px;
+        }
+        .line-2 {
+            background-color: #ffffff;
+            height: 1px;
+            width: 30px;
+        }
+        .line-3 {
+            margin-top: 10px;
+            background-color: #ffffff;
+            height: 1px;
+            width: 30px;
+        }
+        /* Display: None - It will remove the space as well item occupying space */
+        .hamburger-menu {
+            display: none;
+        }
+        /* Performing Media Queries */
+        @media screen and (max-width: 576px) {
+            .nav-items {
+                display: none;
+            }
+            .login-button {
+                display: none;
+            }
+            .hamburger-menu {
+                color: #ffffff;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <div class="logo">
+            <img src="./assets/random-logo.png" alt="Random Logo">
+        </div>
+        <div class="nav-items">
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="login-button">
+            <button>Login</button>
+        </div>
+        <div class="hamburger-menu">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </div>
+    </div>
+</body>
+</html>

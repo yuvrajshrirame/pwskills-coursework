@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 06</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            padding-top: 20px;
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-style: solid;
+        }
+        .container {
+            padding-top: 20px;
+            height: 300px;
+            width: 800px;
+            margin: 0 auto;
+            transition: all 0.5s ease-in-out;
+        }
+        .container img {
+            height: 300px;
+            width: 800px;
+        }
+        .container:hover {
+            filter: grayscale(100%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover to Have a Grayscale Look</h1>
+    <div class="container">
+        <img src="./assets/bill-gates.png" alt="Bill Gates">
+    </div>
+</body>
+</html>

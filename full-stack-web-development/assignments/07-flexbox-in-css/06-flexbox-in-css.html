@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 06</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins';
+            background-color: #212121;
+            color: white;
+        }
+        .nav-header > h1{
+            text-align: center;
+            margin-top: 200px;
+            font-weight: 500;
+            font-size: 90px;
+        }
+        .search-bar{
+            display: block;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px #808080 solid;
+            height: 50px;
+            width: 40%;
+            border-radius: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        .search-field > input{
+            height: 30px;
+            width: 430px;
+            background-color: #212121;
+            border-style: none;
+            color: #ffffff;
+            padding-left: 10px;
+            font-size: 20px;
+        }
+        .search-field > input:focus{
+            outline: none;
+        }
+        .google-mic > img{
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-header">
+            <h1>Google</h1>
+        </div>
+        <div class="search-bar">
+            <div class="search-icon">
+                <img src="./assets/google-search-icon.png" alt="Search Icon" width="35px">
+            </div>
+            <div class="search-field">
+                <input type="text" name="search" id="search">
+            </div>
+            <div class="google-mic">
+                <img src="./assets/google-mic-icon.png" alt="Google Mic" width="40px">
+            </div>
+            <div class="google-lens">
+                <img src="./assets/google-lens-icon.png" alt="Google Lens" width="25px">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
