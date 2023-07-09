@@ -1,0 +1,73 @@
+<!-- Question-06: Sometimes, instead of using static images, CSS can provide a more fle1ible solution. One such example is 
+designing a default profile picture using the first letter of the user's name. In this coding challenge, utilize 
+tailwind CSS properties to achieve the desired output described below. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Question-06</title>
+</head>
+<body>
+    <h1 class="font-bold text-5xl text-center mt-4 tracking-wider">The Real Leadership Lessons of Steve Jobs</h1>
+    <div class="text-center mt-2">
+        <span class="text-gray-500">
+            Six months after Job's death, the author of his best-selling biography identifies the practices that every CEO can try to   emulate.
+        </span>
+        <span class="t-black pt-6">by Walter Isaacson</span>
+    </div>
+
+    <!-- Inserting Thumbnail (Cover Image) -->
+    <div class="w-full flex justify-center mt-6">
+        <img src="./../assets/steve-jobs.jpg" alt="Steve-Jobs-Thumbnail" class="rounded-2xl">
+    </div>
+
+    <!-- Inserting Description -->
+    <p class="px-72 py-6 font-mono"><span class="text-xl font-bold">His saga is the enterpreneurial creation myth</span> Voluptatem, corporis! Ratione, consequuntur porro. Dicta molestiae explicabo ab, quas veritatis dolore minus aliquam harum vel officia qui ullam at velit totam voluptatem accusamus. Asperiores eum ad ea voluptatum neque, quasi omnis amet nihil velit architecto cum, harum accusantium repellat quos iusto. Cum repudiandae explicabo unde asperiores eveniet praesentium reprehenderit magni. Velit accusamus laboriosam, tenetur, illum laborum sunt aliquam eaque quo quidem architecto asperiores quas iure qui beatae sint blanditiis. Animi nesciunt exercitationem odit rem, deserunt iusto ipsam minus blanditiis illo, accusamus beatae a et quam nam voluptates neque dolorem incidunt sed!</p>
+
+    <!-- Inserting Block Quote -->
+    <div class="flex justify-center">
+        <div class="border-black border-l-2 pl-5 font-serif">
+            "The people who are crazy enough to think they can change the world are the ones who do."<br>
+            —Apple's "Think Different" commercial, 1997
+        </div>
+    </div>
+
+    <!-- Inserting Images & Aligning using Grids -->
+    <div class="w-[62%] grid grid-flow-col mx-auto mt-10 gap-4">
+        <div class="article">
+            One of the last times | saw him, after | had finished writing most
+            of the book, | asked him again about his tendency to be rough on
+            people. “Look at the results,” he replied. “These are all smart
+            people | work with, and any of them could get a top job at another
+            place if they were truly feeling brutalized. But they don't.” Then
+            he paused for a few moments and said, almost wistfully, “And we got
+            some amazing things done.” Indeed, he and Apple had had a string of
+            hits over the past dozen years that was greater than that of any
+            other innovative company in modern times: iMac, iPod, iPod nano,
+            iTunes Store, Apple Stores, MacBook, iPhone, iPad, App Store, OS X
+            Lion—not to mention every Pixar film. And as he battled his final
+            illness, Jobs was surrounded by an intensely loyal cadre of
+            colleagues who had been inspired by him for years and a very loving
+            wife, sister, and four children.
+        </div>
+        <div class="thumbnail-timeline">
+            <img src="./../assets/steve-jobs-timeline.jpg" alt="Steve Jobs Timeline" class="w-[90%]">
+        </div>
+    </div>
+
+    <!-- Inserting Profile -->
+    <div class=" flex justify-center items-center mt-10">
+        <div class="w-20 h-20 bg-green-300 text-center flex items-center justify-center rounded-full text-2xl font-bold mr-10">
+            M
+        </div>
+        <div class="w-[30%] font-mono text-[0.8rem]">
+            Walter Isaacson, the CEO of the Aspen Institute, is the author of
+            Steve Jobs and of biographies of Henry Kissinger, Benjamin Franklin,
+            and Albert Einstein.
+        </div>
+    </div>
+</body>
+</html>
