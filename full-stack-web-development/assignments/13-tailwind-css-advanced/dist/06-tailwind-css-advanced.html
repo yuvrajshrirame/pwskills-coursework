@@ -1,0 +1,144 @@
+<!-- Question-06: Building upon the previous assignment, we will now tackle a coding challenge to design a section that 
+guides users through the initial steps to get started. Below are some reference images to guide us. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/infinity-icon.png" type="image/x-icon">
+    <title>Question-06</title>
+</head>
+<body class="bg-gray-900 text-white">
+    <div>
+        <!-- Navigation Bar -->
+        <nav class="h-14 bg-gray-900 flex items-center justify-between">
+            <div class="flex items-center mx-5">
+                <img src="./assets/infinity-icon.png" alt="Brand-Logo" class="w-12">
+                <div class="font-bold text-white text-2xl ml-3">LIQUID</div>
+            </div>
+            <div class="flex items-center mx-5">
+                <button class="text-white bg-red-600 px-5 py-1 rounded-md mr-3 hidden sm:block">CREATE ACCOUNT</button>
+                <img src="./assets/profile-icon.png" alt="Profile-Icon" class="w-10 hidden sm:block">
+                <img src="./assets/hamburger-icon.png" alt="Hamburger-Icon" class="w-6 sm:hidden">
+            </div>
+        </nav>
+        <main>
+            <!-- Hero Section -->
+            <div class="flex justify-evenly items-center flex-col md:flex-row">
+                <div class="flex flex-col justify-start md:justify-center">
+                    <h1 class="text-5xl font-medium mt-14 md:mt-0">Multi-regulated <br>global broker.</h1>
+                    <p class="text-gray-500 mt-6">A trusted destination for traders worldwide.<br> Authorised by FCA, ASIC & FSCA</p>
+                    <button class="px-14 py-2 bg-gray-900 border-2 border-red-600 rounded-md mt-6">DISCOVER ACCOUNTS</button>
+                </div>
+                <img src="./assets/team-illustration.webp" class="w-[50%]">
+            </div>
+            <!-- Statistical Information -->
+            <div class="flex flex-col md:flex-row justify-evenly items-center">
+                <div class="flex flex-row mb-5 justify-evenly items-center">
+                    <img src="./assets/alphabet-logo.webp" alt="Alphabet-Logo" class="w-56 mr-[-15px]">
+                    <div class="bg-green-600 text-white px-2 w-24 rounded-md h-7">↑ 1,740.05</div>
+                </div>
+                <div class="flex flex-row mb-5 justify-evenly items-center">
+                    <img src="./assets/microsoft-logo.png" alt="Microsoft-Logo" class="w-40 mr-6">
+                    <div class="bg-green-600 text-white px-2 w-24 rounded-md h-7">↑ 1,740.05</div>
+                </div>
+                <div class="flex flex-row mb-5 justify-evenly items-center">
+                    <img src="./assets/facebook-logo.png" alt="Facebook-Logo" class="w-40 mr-6">
+                    <div class="bg-red-600 text-white px-2 w-24 rounded-md h-7">↓ 1,740.05</div>
+                </div>
+                <div class="flex flex-row mb-5 justify-evenly items-center">
+                    <img src="./assets/amazon-logo.png" alt="Amazon-Logo" class="w-40 mr-6">
+                    <div class="bg-green-600 text-white px-2 w-24 rounded-md h-7">↑ 1,740.05</div>
+                </div>
+                <div class="flex flex-row mb-5 justify-evenly items-center">
+                    <img src="./assets/tesla-logo.png" alt="Tesla-Logo" class="w-40 mr-3">
+                    <div class="bg-red-600 text-white px-2 w-24 rounded-md h-7">↓ 1,740.05</div>
+                </div>
+            </div>
+            <!-- Blog Cards -->
+            <div class="flex justify-between px-9 items-center">
+                <h2 class="text-xl w-[40%] sm:w-full font-medium sm:text-2xl">Save Time. Get <span class="text-red-600">Higher Return.</span><br> Multiply Wealth</h2>
+                <button class="border-2 border-red-600 px-4 w-52 py-2 rounded-md">FIND OUT MORE ></button>
+            </div>
+            <div class="flex justify-evenly flex-col md:flex-row">
+                <div class="h-[450px] w-[400px] bg-gray-800 rounded-lg px-9 py-0 flex flex-col justify-center m-10">
+                    <img src="./assets/teamwork-illustration-one.svg" alt="Teamwork SVG" class="w-60 mx-auto">
+                    <h1 class="text-left text-2xl font-bold mt-5">Various Assets</h1>
+                    <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe architecto, amet explicabo dolor.</p>
+                </div>
+                <div class="h-[450px] w-[400px] bg-gray-800 rounded-lg px-9 py-0 flex flex-col justify-center m-10">
+                    <img src="./assets/teamwork-illustration-two.svg" alt="Teamwork SVG" class="w-72 mx-auto">
+                    <h1 class="text-left text-2xl font-bold mt-5">Market Analysis</h1>
+                    <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe architecto, amet explicabo dolor.</p>
+                </div>
+                <div class="h-[450px] w-[400px] bg-gray-800 rounded-lg px-9 py-0 flex flex-col justify-center m-10">
+                    <img src="./assets/teamwork-illustration-three.svg" alt="Teamwork SVG" class="w-72 mx-auto">
+                    <h1 class="text-left text-2xl font-bold mt-5">Enhanced Tools</h1>
+                    <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe architecto, amet explicabo dolor.</p>
+                </div>
+            </div>
+            <!-- Different Features -->
+            <div class="w-full bg-white text-black space-y-14 py-16">
+                <div class="flex flex-col md:flex-row md:pl-44 pl-20">
+                    <div class="flex pb-8">
+                        <img src="./assets/feedback-icon.png" alt="Feedback-Icon" class="w-[40px] h-[40px] mr-3">
+                        <div class="space-y-5">
+                            <h1 class="text-3xl font-medium">Expert Service</h1>
+                            <p class="w-[80%] sm:w-[50%] text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laboriosam accusamus voluptatem atque. Laboriosam odio incidunt similique a neque maxime.</p>
+                            <p class="text-gray-500 cursor-pointer">LEARN MORE -> </p>
+                        </div>
+                    </div>
+                    <div class="flex pb-8">
+                        <img src="./assets/law-icon.png" alt="Law-Icon" class="w-[40px] h-[40px] mr-3">
+                        <div class="space-y-5">
+                            <h1 class="text-3xl font-medium">Fully Regulated</h1>
+                            <p class="w-[80%] sm:w-[50%] text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laboriosam accusamus voluptatem atque. Laboriosam odio incidunt similique a neque maxime.</p>
+                            <p class="text-gray-500 cursor-pointer">LEARN MORE -> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row md:pl-44 pl-20">
+                    <div class="flex pb-8">
+                        <img src="./assets/profit-growth-icon.png" alt="Growth-Icon" class="w-[40px] h-[40px] mr-3">
+                        <div class="space-y-5">
+                            <h1 class="text-3xl font-medium">Financial Strength</h1>
+                            <p class="w-[80%] sm:w-[50%] text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laboriosam accusamus voluptatem atque. Laboriosam odio incidunt similique a neque maxime.</p>
+                            <p class="text-gray-500 cursor-pointer">LEARN MORE -> </p>
+                        </div>
+                    </div>
+                    <div class="flex pb-8">
+                        <img src="./assets/headphone-icon.png" alt="Support-Icon" class="w-[40px] h-[40px] mr-3">
+                        <div class="space-y-5">
+                            <h1 class="text-3xl font-medium">Integrated Support</h1>
+                            <p class="w-[80%] sm:w-[50%] text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laboriosam accusamus voluptatem atque. Laboriosam odio incidunt similique a neque maxime.</p>
+                            <p class="text-gray-500 cursor-pointer">LEARN MORE -> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Steps to Get Started -->
+            <div class="px-16 py-3 text-orange-500 text-center bg-white">
+                <fieldset class="border-2 border-orange-500 rounded-md">
+                    <legend class="px-3 py-1 font-medium text-2xl">Simple Steps to Start Trade.</legend>
+                    <div class="flex flex-col md:flex-row justify-evenly py-12">
+                        <div class="flex flex-col justify-center items-center pb-10 md:pb-0">
+                            <img src="./assets/number-1.png" alt="Number-1-Icon" class="w-[80px] pb-5">
+                            <p class="text-gray-500">Register Account</p>
+                        </div>
+                        <div class="flex flex-col justify-center items-center pb-10 md:pb-0">
+                            <img src="./assets/number-2.png" alt="Number-2-Icon" class="w-[80px] pb-5">
+                            <p class="text-gray-500">Fund Your Account</p>
+                        </div>
+                        <div class="flex flex-col justify-center items-center pb-10 md:pb-0">
+                            <img src="./assets/number-3.png" alt="Number-3-Icon" class="w-[80px] pb-5">
+                            <p class="text-gray-500">Start Your Trade</p>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
