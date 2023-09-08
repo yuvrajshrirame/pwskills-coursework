@@ -1,0 +1,24 @@
+<!-- Question-08: Your task is to create a webpage that displays the time in hours,
+minutes, and seconds in the center of the screen. Format the
+time to have 2 digits for hours, minutes, and seconds, and use
+the time's values to assign a hex code to the background. The
+timer should update in real-time without any user interaction. For
+Example: If the time is 12:10:50 the background color of the
+webpage will have the hex code “#121050”. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Clock</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="timer" id="timer">
+        <span id="hours">00</span> : <span id="minutes">00</span> :
+        <span id="seconds">00</span>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
