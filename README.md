@@ -28,6 +28,4 @@ git clone https://github.com/yuvrajshrirame/pwskills-coursework.git
 Once cloned, browse to the desired assignment folder to view the solution and associated assets.
 
 # Contribution
-While this repository primarily serves as a personal archive of my coursework solutions, contributions and suggestions are welcome. If you find any issues, errors, or have ideas for improvements, feel free to open an issue or submit a pull request.
-
-Please ensure that any contributions align with the purpose of the repository and follow good coding practices.
+While this repository primarily serves as a personal archive of my coursework solutions, contributions and suggestions are welcome. If you find any issues, errors, or have ideas for improvements, feel free to open an issue or submit a pull request. Please ensure that any contributions align with the purpose of the repository and follow good coding practices.
